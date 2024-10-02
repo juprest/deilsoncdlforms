@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="campo">
+        <h1 id="titulo">Formulario</h1>
+        <br>
+    </div>
+    <h2 id="subtitulo">Dados pessoais</h2>
+    <form action="ENVIAR.HTML" method="GET">
+        
+        <fieldset class="grupo">
+            
+            <div class="campo">
+                <label for="nome">Nome </label>
+                <INPUT type="text" name="nome "id="nome "> <br>
+            
+                 <div class="campo">   <br>
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereço" id="endereço"><br>
+            </div>        
+            
+                <div class="campo"><br>          
+                <label>Cidade</label>
+                <input type="text" name="cidade" id="cidade">
+
+            </div>
+       
+        
+        <div class="campo"><br>
+            <label for="ESTADO"> Estado</label>
+            <SELEct NAME="ESTADO">
+                <option value="1">SÃO PAULO</option>
+                <option value="2">BAHIA</option>
+                <option value="3">CEARÁ</option>
+                <option value="4">SERGIPE</option>
+                <option value="5">MINAS GERAIS</option>
+
+            </SELEct>
+        </div>
+    </fieldset>
+    <h2 id="subtitulo">Dados profissionais</h2>
+
+   
+    <fieldset>
+        <label >Natureza do cargo</label><BR></BR>
+         <div class="campo">
+             <label>
+            <INPUT type="radio" name="cargo" >Gerencia</INPUT>  
+        </label>
+        <label>
+            <INPUT type="radio"name="cargo">Recepção </INPUT> 
+        </label>
+        <label> 
+            <INPUT type="radio" name="cargo" > Administrativo</INPUT> 
+        </label>
+         <label>
+            <INPUT type="radio" name="cargo" >Jurídico</INPUT> 
+        </label><BR></BR>
+    </div>
+    <div class="campo">
+        
+        <label><p>Área de interesse</p> </label>
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="computação">
+        <label for="tecnologia1">Computação</label>
+        
+        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="biologia">
+        <label for="tecnologia1">Biologia</label>
+        
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="meio ambiente">
+        <label for="tecnologia1">Meio ambiente</label>
+        
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="engenharia">
+        <label for="tecnologia1">Engenharia</label>
+        
+        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="história">
+        <label for="tecnologia1">História</label>
+         </div>
+         <DIV class="campo">
+            <br>
+            <label> mini curriculo</label>
+            <textarea row="8" style="width: 30em;" id="experiencia" name="experiencia"></textarea>
+        </DIV class="campo">
+        </fieldset>
+        
+        <button type="submit" >enviar</button>
+        
+        <button type="reset">limpar</button>
+ </form>
+ 
+</body>
+</html>
